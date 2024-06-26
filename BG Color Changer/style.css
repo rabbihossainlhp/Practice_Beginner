@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(13, 22, 25, 0.879);
+    min-height: 100%;
+}
+
+.header_button{
+    width: 100%;
+    height: 5vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.header_button button{
+    width: 6rem;
+    background-color: rgb(127, 255, 127);
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px rgb(37, 195, 222);
+}
+.header_button button:hover{
+    cursor: pointer;
+    transform: scale(0.95)
+}
+
+.manageAll{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    width: 50%;
+    height: 60%;
+    border: 2px solid rgb(38, 138, 31);
+    padding: 1rem;
+    align-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+.banner h1{
+    font-size: 2.5rem;
+    color: rgb(19, 197, 45);
+    margin-bottom: 1rem;
+    /* text-decoration: underline rgb(164, 16, 97) 2px; */
+}
+.banner p{
+    color: rgb(0, 255, 153);
+    margin-bottom: 3rem;
+}
+
+.side_color{
+    height: 60%;
+    width: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:2rem;
+    background-color: rgb(99, 97, 94);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 0.3rem;
+    border-radius: 5px;
+}
+
+.side_color button:hover{
+    cursor: pointer;
+}
+.side_color button:active{
+    transform: scale(0.95);
+}
+
+
+/*  */
+#green,#white,#aqua,#cornflowerblue,#black,#orange{
+    height: 5rem;
+    width: 5rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#green{
+    background-color: green;
+}
+#white{
+    background-color: white;
+}
+#aqua{
+    background-color: aqua;
+}
+#cornflowerblue{
+    background-color: cornflowerblue;
+}
+#black{
+    background-color: black;
+    color: white;
+}
+#orange{
+    background-color: orange;
+}
+/*  */
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(8, 32, 2);
+    margin-top: 3rem;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+footer a{
+    color: blanchedalmond;
+}
+
+
+
+
+
+@media(max-width:640px){
+    .side_color{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position:relative;
+        margin-top: 30%;
+        width: 25rem;
+        height: 15rem;
+        order: 2;
+        left: auto;
+        gap: 1rem;
+    }
+    .banner{
+        position: relative;
+        top: 10%;
+        width: 70%;
+    }
+    .manageAll{
+        display: flex;
+        flex-direction: column;
+    }
+}
